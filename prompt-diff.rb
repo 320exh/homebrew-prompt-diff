@@ -7,10 +7,10 @@ class PromptDiff < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/320exh/prompt-diff/releases/download/v1.0.1/prompt-diff-darwin-arm64"
-      sha256 "698c427d7ae02e06c5996a57b42cfcb993b0d1aae6450c17e868cec06aa13d13"
+      sha256 "340218b5bce703df8ee9ae7e3f22a044ee8bcf25050c09cd87e5ec2e74c534b8"
     else
       url "https://github.com/320exh/prompt-diff/releases/download/v1.0.1/prompt-diff-darwin-amd64"
-      sha256 "34a20aef3f0b0f36b4e9d29936c0a45d8f085f299a5a4bb37e81d772673e2c3c"
+      sha256 "a77e45fc0643e56703bce2e9b32cb2f3f908f2f28c9ae6589fac43ba3a055fe4"
     end
   end
 
