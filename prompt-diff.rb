@@ -2,15 +2,15 @@ class PromptDiff < Formula
   desc "Version, diff, and benchmark LLM system prompts"
   homepage "https://github.com/320exh/prompt-diff"
   license "MIT"
-  version "1.0.1"
+  version "1.0.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/320exh/prompt-diff/releases/download/v1.0.1/prompt-diff-darwin-arm64"
-      sha256 "340218b5bce703df8ee9ae7e3f22a044ee8bcf25050c09cd87e5ec2e74c534b8"
+      url "https://github.com/320exh/prompt-diff/releases/download/v1.0.2/prompt-diff-darwin-arm64"
+      sha256 "854ff7e8b4e632c398d3563a5ff69b13659de0e6d8b76bdc9cfd3b0474bb8086"
     else
-      url "https://github.com/320exh/prompt-diff/releases/download/v1.0.1/prompt-diff-darwin-amd64"
-      sha256 "a77e45fc0643e56703bce2e9b32cb2f3f908f2f28c9ae6589fac43ba3a055fe4"
+      url "https://github.com/320exh/prompt-diff/releases/download/v1.0.2/prompt-diff-darwin-amd64"
+      sha256 "9a513030db35f791a208266d1bf2f4c7fffb9e233efd52c5e76884a8c07057b6"
     end
   end
 
@@ -19,6 +19,6 @@ class PromptDiff < Formula
   end
 
   test do
-    assert_match "v1.0.1", shell_output("#{bin}/prompt-diff version")
+    assert_match "v1.0.2", shell_output("#{bin}/prompt-diff version")
   end
 end
