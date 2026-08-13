@@ -2,25 +2,25 @@ class PromptDiff < Formula
   desc "Version, diff, and benchmark LLM system prompts"
   homepage "https://github.com/320exh/prompt-diff"
   license "MIT"
-  version "1.0.5"
+  version "1.0.6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/320exh/prompt-diff/releases/download/v1.0.5/prompt-diff-darwin-arm64"
-      sha256 "d054fe2e56a8fee02f9875ca1d8d0ed89770f7595ad50626f8164eb1be65196d"
+      url "https://github.com/320exh/prompt-diff/releases/download/v1.0.6/prompt-diff-darwin-arm64"
+      sha256 "b05a91dd3a914535a20c3e40fba38b1ef6d691dbe60a88d067732b87f86c134b"
     else
-      url "https://github.com/320exh/prompt-diff/releases/download/v1.0.5/prompt-diff-darwin-amd64"
-      sha256 "89d589bed8241e5630a020c912bed8f81c028285fe2b57821131ab7fc4719915"
+      url "https://github.com/320exh/prompt-diff/releases/download/v1.0.6/prompt-diff-darwin-amd64"
+      sha256 "dda5f282308d848c7fa95d5c0b354285c718b6ce35cf228265e3006b2d17ee0b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/320exh/prompt-diff/releases/download/v1.0.5/prompt-diff-linux-arm64"
-      sha256 "f8b2419715fafb5d55a18b7e9b2ae102cce2136cebb7a2c1645ba0fe45ea9ad1"
+      url "https://github.com/320exh/prompt-diff/releases/download/v1.0.6/prompt-diff-linux-arm64"
+      sha256 "560396ee954eaa3a31053b756dbc0e5f1918d7d970e1d0d092d86df4ed64c20c"
     else
-      url "https://github.com/320exh/prompt-diff/releases/download/v1.0.5/prompt-diff-linux-amd64"
-      sha256 "fd7d0183f62fb2b6f9124fac4e8a338fbb3832cf660d639c4a64f19c359abd9a"
+      url "https://github.com/320exh/prompt-diff/releases/download/v1.0.6/prompt-diff-linux-amd64"
+      sha256 "cb9f6fef455cd8e43e458caf4352dd261f618ab59c220d7264775fa59ca5a6ea"
     end
   end
 
@@ -29,6 +29,6 @@ class PromptDiff < Formula
   end
 
   test do
-    assert_match "v1.0.5", shell_output("#{bin}/prompt-diff version")
+    assert_match "v1.0.6", shell_output("#{bin}/prompt-diff version")
   end
 end
